@@ -1,28 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
         <item
-            android:id="@+id/itBundle"
+            android:id="@+id/itemNavigationBundle"
             android:title="Bundle"
             android:icon="@drawable/ic_action_home" />
 
         <item
-            android:id="@+id/itSerializable"
+            android:id="@+id/itemNavigationSerializable"
             android:title="Serializable"
             android:icon="@drawable/ic_action_money" />
 
         <item
-            android:id="@+id/itParcelable"
+            android:id="@+id/itemNavigationParcelable"
             android:title="Parcelable"
             android:icon="@drawable/ic_action_fav" />
 
         <item
-            android:id="@+id/itDial"
+            android:id="@+id/itemNavigationDial"
             android:title="Dial"
             android:icon="@drawable/ic_action_dial" />
 
         <item
-            android:id="@+id/itWhatsapp"
-            android:title="whatsApp"
+            android:id="@+id/itemNavigationWhatsapp"
+            android:title="WhatsApp"
             android:icon="@drawable/ic_action_phone" />
 
 

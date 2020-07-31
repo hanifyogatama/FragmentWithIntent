@@ -1,3 +1,15 @@
 <resources>
     <string name="app_name">Intent With Fragment</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="bundle_fragment">Bundle fragment</string>
+    <string name="serializable_fragment">Serializable fragment</string>
+    <string name="parcelable_fragment">Parcelable fragment</string>
+    <string name="dial_fragment">Dial fragment</string>
+    <string name="whatsapp_fragment">WhatsApp fragment</string>
+    <string name="bundle_activity">Activity Terima Bundle</string>
+    <string name="serializable_activity">Activity Terima Serializable</string>
+    <string name="parcelable_activity">Activity Terima Parcelable</string>
+
+
 </resources>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".WhatsAppFragment">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gdHorizontal"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintGuide_percent=".20"/>
+
+    <ImageView
+        android:scaleType="centerCrop"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:src="@drawable/ic_wave"
+        app:layout_constraintBottom_toBottomOf="@id/gdHorizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gdVertical1"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintGuide_percent=".10"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gdVertical2"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintGuide_percent=".90"/>
+
+    <ImageView
+        android:scaleType="centerCrop"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:src="@drawable/ic_wave"
+        app:layout_constraintBottom_toBottomOf="@id/gdHorizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <ImageView
+        android:id="@+id/ivLogoWA"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_marginTop="25dp"
+        android:src="@drawable/logo_wa"
+        app:layout_constraintEnd_toEndOf="@id/gdVertical2"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="@id/gdVertical1"
+        app:layout_constraintTop_toBottomOf="@id/gdHorizontal" />
+
+    <com.hbb20.CountryCodePicker
+        android:id="@+id/countryCodePicker"
+        android:layout_marginTop="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@id/ivLogoWA"
+        app:layout_constraintStart_toStartOf="@id/gdVertical1"
+        />
+
+    <EditText
+        android:id="@+id/etWhatsappNumber"
+        android:layout_marginTop="50dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="enter number"
+        android:inputType="phone"
+        app:layout_constraintTop_toBottomOf="@id/ivLogoWA"
+        app:layout_constraintStart_toStartOf="@id/gdVertical1"
+        app:layout_constraintEnd_toEndOf="@id/gdVertical2"/>
+
+    <EditText
+        android:id="@+id/etWhatsappMessage"
+        android:layout_width="0dp"
+        android:layout_height="90dp"
+        android:hint="enter message"
+        android:gravity="start"
+        android:inputType="textMultiLine"
+        app:layout_constraintEnd_toEndOf="@id/gdVertical2"
+        app:layout_constraintStart_toStartOf="@id/gdVertical1"
+        app:layout_constraintTop_toBottomOf="@id/etWhatsappNumber" />
+
+    <Button
+        android:id="@+id/btnNextWhatsapp"
+        android:layout_marginTop="8dp"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button"
+        android:text="send via WA"
+        android:elevation="4dp"
+        android:textColor="#fff"
+        app:layout_constraintTop_toBottomOf="@id/etWhatsappMessage"
+        app:layout_constraintStart_toStartOf="@id/gdVertical1"
+        app:layout_constraintEnd_toEndOf="@id/gdVertical2"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Explicit Intent WA Send Message"
+        android:textColor="#3c1053"
+        android:textSize="15sp"
+        app:layout_constraintTop_toBottomOf="@id/gdHorizontal"
+        app:layout_constraintStart_toStartOf="@id/gdVertical1" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
